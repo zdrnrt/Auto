@@ -1,0 +1,11 @@
+.equip-filter{
+  &__toggle{
+    transition: $transition-time;
+    &:hover{
+      color: $cl-purple;
+    }
+    &-icon{
+      transform: rotate(90deg);
+    }
+  }
+}
