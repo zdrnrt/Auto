@@ -1,6 +1,5 @@
 .aside{
   padding: 1.2rem 0.8rem;
-  gap: 1.2rem;
   background-color: $cl-grey-light;
   &--hidden{
     width: fit-content;
@@ -26,6 +25,7 @@
   }
   &__content{
     min-height: calc(100vh - 2.4rem);
+    gap: 1.2rem;
   }
   &__header{
     width: 100%;
