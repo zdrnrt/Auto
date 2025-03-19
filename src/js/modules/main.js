@@ -1,18 +1,15 @@
 import { Chart } from 'chart.js/auto';
 
-(function () {
-	moduleOpen('./src/html/main.html').then(() => {
-		console.log('asdasd');
-		window.mainChartDraw();
-	});
-})();
-
 window.mainOpen = function () {
 	moduleOpen('./src/html/main.html').then(() => {
 		console.log('asdasd');
 		window.mainChartDraw();
 	});
 };
+
+(function () {
+	mainOpen();
+})();
 
 window.mainChartDraw = () => {
 	const lineLabels = [
