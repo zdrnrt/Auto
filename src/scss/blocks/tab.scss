@@ -1,0 +1,29 @@
+.tab-list{
+  &__nav{
+    border-bottom: 1px solid $cl-border;
+    background-color: $cl-white;
+  }
+  &__btn{
+    margin-bottom: -1px;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+    &:hover{
+      border-color: $cl-purple-light;
+      border-bottom-color: $cl-white;
+    }
+    &:active{
+      border-color: $cl-purple!important;
+      border-bottom-color: $cl-white!important;
+    }
+    &--active{
+      border-color: $cl-border;
+      border-bottom-color: $cl-white;
+    }
+  }
+  &__item{
+    display: none;
+    &--active{
+      display: block;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import 'jquery';
-import 'bootstrap/dist/js/bootstrap.min.js'
+import * as Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/style.scss'
 
@@ -11,6 +11,7 @@ import './blocks/content'
 import './blocks/loading'
 import './blocks/form'
 import './blocks/button'
+import './blocks/tab'
 
 import './modules/main'
 import './modules/equip'

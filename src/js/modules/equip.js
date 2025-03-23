@@ -1,24 +1,25 @@
-import {Modal} from 'bootstrap'
+import * as XLSX from 'xlsx/xlsx.mjs';
+import * as fs from 'fs';
+import { Modal } from 'bootstrap'
+
+XLSX.set_fs(fs);
 
 window.equipOpen = function(){
   moduleOpen('./src/html/equip.html')
-  .then( () => {
-      
-      window.equipUpdateModal = new Modal(document.getElementById('euqipUpdateModal'), {
-        backdrop: true, keyboard: true
-      })
-      document.getElementById('equipUpdateOpen').addEventListener('click', ()=>{
-        window.equipUpdateModal.show();
-      })
-});
+    .then( () => {
 
-
+    });
 }
+
+
 
 window.equipDownload = (e) => {
   e.preventDefault();
   const format = e.target.querySelector('[name="format"]:checked').value;
   console.log(format)
+  var result = document.getElementById("equipResult");
+  var workbook = XLSX.utils.table_to_book(result);
+  XLSX.writeFile(workbook, `Report.${format}`)
 }
 
 window.equipFilter = (e) => {
@@ -29,5 +30,5 @@ window.equipFilter = (e) => {
 window.equipUpdate = (e) => {
   e.preventDefault();
   console.log(e.target)
-  window.equipUpdateModal.hide()
+  Modal.getInstance('#euqipUpdateModal').hide()
 }
