@@ -79,3 +79,10 @@
   --bs-btn-active-color: #{$cl-purple-bright};
   text-decoration: none;
 }
+.btn-equip{
+  font-size: 1.6rem;
+  &--edit{}
+  &--download{
+    font-size: 2rem;
+  }
+}
