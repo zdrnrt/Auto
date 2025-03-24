@@ -11,6 +11,7 @@ export default defineConfig({
 				index: resolve(__dirname, "index.html"),
 				main: resolve(__dirname, 'src/html/main.html'),
 				equip: resolve(__dirname, 'src/html/equip.html'),
+				equipTt: resolve(__dirname, 'src/html/equipTt.html'),
 			}
 		}
 	}

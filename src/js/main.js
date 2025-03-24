@@ -15,3 +15,4 @@ import './blocks/tab'
 
 import './modules/main'
 import './modules/equip'
+import './modules/equipTt'
