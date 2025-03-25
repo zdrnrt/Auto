@@ -11,7 +11,7 @@ window.equipTtOpen = function(){
     });
 }
 
-equipTtOpen();
+// equipTtOpen();
 
 window.equipDownload = (e) => {
   e.preventDefault();
